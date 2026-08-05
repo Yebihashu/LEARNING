@@ -120,6 +120,21 @@ A + B =
 \end{bmatrix}
 $$
 
+### Rules of matrices addition operation
+
+Matrix addition satisfies the following algebraic properties (for matrices of matching dimensions):
+
+| Property | Rule |
+| --- | --- |
+| **Closure** | If $A$ and $B$ are $m \times n$ matrices, then $A + B$ is also an $m \times n$ matrix. |
+| **Commutative** | $A + B = B + A$ |
+| **Associative** | $(A + B) + C = A + (B + C)$ |
+| **Identity element** | $A + 0 = 0 + A = A$, where $0$ is the zero matrix. |
+| **Additive inverse** | For every $A$, there exists $-A$ such that $A + (-A) = 0$. |
+| **Cancellation law** | If $A + C = B + C$, then $A = B$. |
+
+
+
 ## Dot Product (Matrix Multiplication)
 
 ### The Fundamental Operation: Row-by-Column Multiplication
@@ -221,6 +236,39 @@ $$
 
 > **Note:** The result of a vector dot product is always a **scalar** (a single number), not a vector.
 
+
+
+### Rules of matrices multiplication operation
+
+Matrix multiplication satisfies the following algebraic properties (when the products are defined):
+
+| Property | Rule |
+| --- | --- |
+| **Compatibility (defined only when dimensions match)** | If $A$ is $m \times n$ and $B$ is $n \times p$, then $AB$ is defined and has size $m \times p$. |
+| **Closure** | If $AB$ is defined, then $AB$ is a matrix. |
+| **Associative** | $(AB)C = A(BC)$ |
+| **Not commutative (in general)** | $AB \neq BA$ |
+| **Left distributive** | $A(B + C) = AB + AC$ |
+| **Right distributive** | $(A + B)C = AC + BC$ |
+| **Identity element** | $AI = IA = A$, where $I$ is the identity matrix of the appropriate size. |
+| **Multiplication by the zero matrix** | $A0 = 0A = 0$, whenever the products are defined. |
+| **Associativity with scalar multiplication** | $c(AB) = (cA)B = A(cB)$ |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Eigenvalues and Eigenvectors of Symmetric Matrices
 
 ## Rules
@@ -261,6 +309,14 @@ $$
 > Because $\lambda$ is equal to its own complex conjugate, $\lambda$ must be a real number. $\blacksquare$
 
 </details><br>
+
+
+
+
+
+
+
+
 
 **Eigenvectors of a symmetric matrix:** The eigenvectors of a symmetric matrix corresponding to distinct (non-repeated) eigenvalues are always orthogonal to one another.
 
